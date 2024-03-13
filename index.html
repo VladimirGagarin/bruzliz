@@ -5,126 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-        /* styles.css */
-
-        /* Reset default margin and padding */
-        body{
-            font-size: 20px;
+        body {
+            font-size: 16px; /* Adjust font size for better mobile readability */
             font-weight: bold;
             background-color: #fff;
+            margin: 0;
+            padding: 0;
             display: flex;
-            justify-content: center; /* Horizontally center everything */
-            align-items: center; /* Vertically center everything */
-            height: 100vh; /* Ensure full viewport height */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
             flex-direction: column;
+            align-items: center;
             min-height: 100vh;
         }
 
         /* Style the navigation */
         nav {
-            background-color: #002fff; /* Background color for the navigation */
-            width: 95%;
-            height: auto;
+            background-color: #002fff;
+            width: 100%; /* Adjust width for full mobile screen */
         }
 
         nav ul {
-            list-style: none; /* Remove bullet points from list */
-            /*display: flex; /* Use flexbox */
-            /*justify-content: center; /* Center align items horizontally */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center align items horizontally */
         }
 
         nav ul li {
-            margin: 0 10px; /* Add spacing between list items */
+            margin: 0 10px;
         }
 
         nav ul li a {
-            color: #fff; /* Text color */
-            text-decoration: none; /* Remove underline from links */
-            padding: 10px 15px; /* Add padding to links */
-            display: flex; /* Make links behave as block elements */
-            margin-top: 100px;
-            flex-direction: column;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
         }
 
         nav ul li a:hover {
-            background-color: #555; /* Change background color on hover */
+            background-color: #555;
         }
 
-        section{
+        section {
             border: 2px solid #002fff;
-            width: 80%;
+            width: 100%; /* Adjust width for full mobile screen */
             min-height: 30vh;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 20px 0; /* Add vertical margin */
             padding: 20px;
             font-style: normal;
-            font-size: 20px;
-            margin-bottom: 20px;
-            margin-top: 10px;
+            font-size: 16px; /* Adjust font size for better mobile readability */
         }
-        header{
-            margin-top: 1000px;
+
+        header {
             background-color: #002fff;
-            width: 80%;
-            margin-left: 10px;
+            width: 100%;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Add top margin */
+            padding: 20px 0; /* Add vertical padding */
         }
-        header h1{
+
+        header h1 {
             color: #fff;
-            margin-left: 30px;
-            font-weight: bold;
-            transform: translateY("400px");
-            font-size: 60px;
+            font-size: 24px; /* Adjust font size for better mobile readability */
+            margin-top: 10px; /* Add top margin */
         }
-        header img{
-            width: 100px;
-            height: auto;
-            border-radius: 200px;
-            width: 200px;
-            height: 200px;
-            margin-left: 100px;
-            text-align: center;
-            padding: 10px 0px;
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 10px; /* Add top margin */
         }
+
         #Photos {
             border: 2px solid #002fff;
-            width: 80%;
-            min-height: 70vh;
-            margin: 20px auto; /* Center the section with some margin */
+            width: 100%; /* Adjust width for full mobile screen */
+            min-height: 50vh; /* Adjust height for better mobile view */
+            margin: 20px 0; /* Add vertical margin */
             padding: 20px;
             font-style: normal;
-            font-size: 20px;
-            overflow-x: auto; /* Add horizontal scroll if images overflow */
+            font-size: 16px; /* Adjust font size for better mobile readability */
+            overflow-x: auto;
             background-color: #555;
         }
 
         #Photos .images {
             display: flex;
-            flex-wrap: nowrap; /* Ensure images don't wrap to the next line */
-            overflow-x: auto; /* Add horizontal scroll if images overflow */
+            flex-wrap: nowrap;
+            overflow-x: auto;
         }
 
         #Photos .images img {
-            max-width: 60%; /* Ensure images don't exceed the width of their container */
-            height: 70vh; /* Maintain aspect ratio */
-            margin-right: 10px; /* Add some space between images */
+            max-width: 100%; /* Adjust image size to fit mobile screen */
+            max-height: 200px; /* Limit image height for better mobile view */
+            margin-right: 10px;
         }
-        section:last-child{
-            height: 5vh;
-            background-color: blue;
-            color: #fff;
-            font-size: 20px;
+
+        #contact {
+            border: 2px solid #002fff;
+            width: 100%; /* Adjust width for full mobile screen */
+            margin: 20px 0; /* Add vertical margin */
+            padding: 20px;
+            font-style: normal;
+            font-size: 16px; /* Adjust font size for better mobile readability */
         }
+
         footer {
-            width: 80%;
+            width: 100%;
             text-align: center;
             background-color: #002fff;
             color: #fff;
             padding: 10px 0;
-            margin-bottom: 20px;
+            margin-top: auto; /* Push footer to the bottom */
         }
     </style>
 </head>
