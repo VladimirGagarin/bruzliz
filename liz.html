@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* styles.css */
+
+        /* Reset default margin and padding */
+        body{
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #fff;
+            display: flex;
+            justify-content: center; /* Horizontally center everything */
+            align-items: center; /* Vertically center everything */
+            height: 100vh; /* Ensure full viewport height */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Style the navigation */
+        nav {
+            background-color: #002fff; /* Background color for the navigation */
+            width: 95%;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none; /* Remove bullet points from list */
+            /*display: flex; /* Use flexbox */
+            /*justify-content: center; /* Center align items horizontally */
+        }
+
+        nav ul li {
+            margin: 0 10px; /* Add spacing between list items */
+        }
+
+        nav ul li a {
+            color: #fff; /* Text color */
+            text-decoration: none; /* Remove underline from links */
+            padding: 10px 15px; /* Add padding to links */
+            display: flex; /* Make links behave as block elements */
+            margin-top: 100px;
+            flex-direction: column;
+        }
+
+        nav ul li a:hover {
+            background-color: #555; /* Change background color on hover */
+        }
+
+        section{
+            border: 2px solid #002fff;
+            width: 80%;
+            min-height: 30vh;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            font-style: normal;
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        header{
+            margin-top: 800px;
+            background-color: #002fff;
+            width: 85%;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        header h1{
+            color: #fff;
+            margin-left: 30px;
+            font-weight: bold;
+            transform: translateY("400px");
+            font-size: 60px;
+        }
+        header img{
+            width: 100px;
+            height: auto;
+            border-radius: 200px;
+            width: 200px;
+            height: 200px;
+            margin-left: 100px;
+        }
+        #Photos {
+            border: 2px solid #002fff;
+            width: 80%;
+            min-height: 70vh;
+            margin: 20px auto; /* Center the section with some margin */
+            padding: 20px;
+            font-style: normal;
+            font-size: 20px;
+            overflow-x: auto; /* Add horizontal scroll if images overflow */
+            background-color: #555;
+        }
+
+        #Photos .images {
+            display: flex;
+            flex-wrap: nowrap; /* Ensure images don't wrap to the next line */
+            overflow-x: auto; /* Add horizontal scroll if images overflow */
+        }
+
+        #Photos .images img {
+            max-width: 60%; /* Ensure images don't exceed the width of their container */
+            height: 70vh; /* Maintain aspect ratio */
+            margin-right: 10px; /* Add some space between images */
+        }
+        section:last-child{
+            height: 5vh;
+            background-color: blue;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="bruz liz/417486098_729534652578906_4579410647027858438_n.jpg" alt="logo">
+        <h1>[ <span class="nicknames"></span>. ]</h1>
+    </header>
+    <main>
+    <section id="about">
+        <div>
+            <p><span class="type-here"></span></p>
+        </div>
+    </section>
+
+
+    <section id="Photos">
+        <h2>Bruz Liz</h2>
+        <div class="images">
+            <img src="bruz liz/426400775_902173741287079_990164863984441106_n.jpg" alt="logo">
+            <img src="bruz liz/430674658_732402055625499_1005915364786056833_n__1_-removebg-preview (1).png" alt="logo">
+            <img src="bruz liz/427909060_840525111175808_5099312245641007338_n.jpg" alt="logo">
+            <img src="bruz liz/430662508_732400112292360_5045261167391876867_n-removebg-preview.png" alt="logo">
+            <img src="bruz liz/428924759_415139340872191_8474861294825453726_n.jpg" alt="logo">
+            <img src="bruz liz/430662508_732400112292360_5045261167391876867_n-removebg-preview (2).png" alt="logo">
+            <img src="bruz liz/426303324_1100773434298898_6886641113103359240_n.jpg" alt="logo">
+            <img src="bruz liz/430662508_732400112292360_5045261167391876867_n-removebg-preview (1).png" alt="logo">
+            <img src="bruz liz/427928871_378762978199378_7034220882850104252_n.jpg" alt="logo">
+            <img src="bruz liz/430494865_732400115625693_5454758742231658215_n-removebg-preview.png" alt="logo">
+            <img src="bruz liz/fav3.png" alt="logo">
+            <img src="bruz liz/fav2.png" alt="logo">
+            <img src="bruz liz/417486098_729534652578906_4579410647027858438_n.jpg" alt="logo">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me:</p>
+        <ul>
+            <li>Email: bruzLiz8@gmail.com</li>
+            <li>Phone: +123 45 678 90</li>
+            <!-- Add more contact information as needed -->
+        </ul>
+    </section>
+  </main>
+    <!-- Footer -->
+    <footer>
+        <u><p>&copy; 2024 <b>Bruz Liz</b>. All rights reserved.</p></u>
+    </footer>
+    <script>
+        // JavaScript code to create typing effect
+        const text = "BRUZ LIZ"; // Text to be typed out
+        const typingSpeeds = 100; // Typing speed in milliseconds
+
+        const typeHeret = document.querySelector('.nicknames'); // Select the element to type into
+
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                typeHeret.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, typingSpeeds);
+            }
+        }
+
+        // Start typing effect
+        typeWriter();
+
+
+             // JavaScript code to create typing effect
+            const texts = [
+                "Bonjour, World! I am Elizabeth, ",
+                " a culinary virtuoso who pirouettes through the kitchen, ",
+                " my apron a canvas for creativity. ",
+                " With each flour-dusted stroke, ",
+                " I compose symphonies of taste, ",
+                " whisking together memories and fragrant dreams. ",
+                " My knife, a brush of destiny, ",
+                "carves through crusty loaves, revealing their tender secrets ",
+                " from around the world. ",
+                " The buttery warmth of freshly baked bread dances on my tongue, a sonnet to sustenance. ",
+                " In my oven’s embrace, hope rises like a golden soufflé. I fold it gently, layer upon layer,", 
+                " until it blooms into a promise—a promise of comfort, shared laughter, and nourishment for the soul. ",
+                " And oh, the alchemy of spices! Cinnamon whispers of cozy hearths, while saffron threads weave tales of ", 
+                " distant lands. I sprinkle stardust—a pinch of wonder, a dash of curiosity—into every pot, transforming mere ",
+                " ingredients into epicurean poetry. ",
+                " My palette is a rainbow: ruby tomatoes, emerald basil, and saffron sunsets. I paint with flavors, coaxing umami ", 
+                " symphonies from humble roots. A bouquet of herbs perfumes the air, and I inhale possibility. ",
+                " When the sizzle of garlic meets the sizzle of life, I know magic is afoot. I stir love into sauces, fold it into ", 
+                " pastries, and sprinkle it over salads like edible stardust. Each bite is an invitation—to linger, to savor, to connect.",
+                " So here I stand, apron-clad poet, weaving culinary sonnets. My kitchen is my stage, and the world my audience. With every ",
+                " whisked meringue and caramelized onion, I serve up a slice of my heart.",
+                " Welcome to my gastronomic reverie, where flavors collide, and meals become memories. Let us dine together, for in this shared ",
+                " feast, we find communion—a feast of life.",
+                " Bon appétit! 🍽️🎨✨"
+            ]; // Array of text to be typed out
+
+            const typingSpeed = 100; // Typing speed in milliseconds
+
+            const typeHere = document.querySelector('.type-here'); // Select the element to type into
+
+            let textIndex = 0;
+            let charIndex = 0;
+
+            function typeWriters() {
+                if (textIndex < texts.length) {
+                    if (charIndex < texts[textIndex].length) {
+                        typeHere.textContent += texts[textIndex].charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeWriters, typingSpeed);
+                    } else {
+                        // Move to the next text in the array
+                        textIndex++;
+                        charIndex = 0;
+                        // Add line break if it's not the last text
+                        if (textIndex < texts.length) {
+                            typeHere.innerHTML += '<br>';
+                        }
+                        setTimeout(typeWriters, 500); // Delay before typing the next text
+                    }
+                }
+            }
+            
+            // Start typing effect
+            typeWriters();
+
+        // JavaScript code for image manipulation
+        const images = document.querySelectorAll('img');
+
+        // Function to handle mouseover event
+        function handleMouseOver(event) {
+            event.target.style.transform = 'translateZ(50px) scale(1.4)'; // Grow larger
+            event.target.style.ransition = "1000ms";
+        }
+
+        // Function to reset image position and size
+        function resetImage(event) {
+            event.target.style.transform = 'translateZ(0) scale(1)'; // Reset size
+            event.target.style.ransition = "1000ms";
+        }
+
+        // Add event listeners for mouseover and mouseout events to all images
+        images.forEach(image => {
+            image.addEventListener('mouseover', handleMouseOver);
+            image.addEventListener('mouseout', resetImage);
+        });
+
+        // For touch devices, handle touch events
+        let touchStartX, touchStartY;
+
+        function handleTouchStart(event) {
+            touchStartX = event.touches[0].clientX;
+            touchStartY = event.touches[0].clientY;
+        }
+
+        function handleTouchMove(event) {
+            if (!touchStartX || !touchStartY) return;
+            const deltaX = event.touches[0].clientX - touchStartX;
+            const deltaY = event.touches[0].clientY - touchStartY;
+            event.target.style.transform = `translate(${deltaX}px, ${deltaY}px) translateZ(50px) scale(1.1)`;
+        }
+
+        function handleTouchEnd(event) {
+            touchStartX = null;
+            touchStartY = null;
+            resetImage(event);
+        }
+
+        // Add touch event listeners to all images
+        images.forEach(image => {
+            image.addEventListener('touchstart', handleTouchStart);
+            image.addEventListener('touchmove', handleTouchMove);
+            image.addEventListener('touchend', handleTouchEnd);
+        });
+    </script>
+</body>
+</html>
